@@ -33,6 +33,9 @@ body{
 
 #content{
     background-color: red;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 #sidebar>div{
@@ -52,4 +55,8 @@ body{
 #header>div{
     display: flex;
     align-items: center;
+}
+
+#projects{
+    grid-row: 1/3;
 }
