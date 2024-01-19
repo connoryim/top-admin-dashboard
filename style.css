@@ -1,0 +1,47 @@
+html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+#sidebar{
+    grid-row: 1/-1;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#header{
+    background-color: blue;
+}
+
+#content{
+    background-color: red;
+}
+
+#sidebar>div{
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#Dashboard{
+    font-size: 2rem;
+}
+
+#search{
+    display: inline-flex;
+}
