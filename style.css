@@ -26,6 +26,9 @@ body{
 
 #header{
     background-color: blue;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 #content{
@@ -44,4 +47,9 @@ body{
 
 #search{
     display: inline-flex;
+}
+
+#header>div{
+    display: flex;
+    align-items: center;
 }
