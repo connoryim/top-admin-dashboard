@@ -3,6 +3,7 @@
     --st-blue:rgb(46, 176, 228);
     --st-grey:rgb(222, 230, 231);
     background-color: var(--st-grey);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 html{
