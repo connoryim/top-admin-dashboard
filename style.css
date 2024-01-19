@@ -18,7 +18,7 @@ body{
 #container{
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(180px,1fr) 6fr;
     grid-template-rows: 1fr 4fr;
 }
 
@@ -34,8 +34,10 @@ body{
 #header{
     background-color: var(--st-white);
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    padding-right: 48px;
 }
 
 #content{
@@ -43,6 +45,7 @@ body{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 14px;
 }
 
 #sidebar>div{
@@ -51,17 +54,34 @@ body{
     margin-top: 20px;
 }
 
+#sidebar>div>div{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
 #Dashboard{
     font-size: 2rem;
 }
 
 #search{
-    display: inline-flex;
-}
-
-#header>div{
     display: flex;
     align-items: center;
+    margin: 12px;
+}
+
+#search input{
+    width: 60%;
+    border-radius: 16px;
+    border-style: none;
+    background-color: var(--st-grey);
+    margin: 12px;
+    font-size: 1.5rem;
+}
+
+#search input:focus{
+    outline: none;
 }
 
 #projects{
@@ -70,4 +90,44 @@ body{
 
 h1{
     font-size: 1.5rem;
+}
+
+#articles>div{
+    background-color: var(--st-white);
+}
+
+#account{
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    justify-content: space-around;
+}
+
+#actions{
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    justify-content: space-around;
+}
+
+#actions button{
+    background-color: var(--st-blue);
+    border-style: none;
+    border-radius: 16px;
+    color: var(--st-white);
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 88px;
+}
+
+#info{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;  
+    gap: 24px;
+    margin-left: 16px;
+}
+
+#infoPicture{
+    grid-row: 1/3;
 }
